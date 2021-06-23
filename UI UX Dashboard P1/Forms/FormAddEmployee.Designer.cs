@@ -45,7 +45,7 @@ namespace UI_UX_Dashboard_P1.Forms
             this.txtPhone.Location = new System.Drawing.Point(84, 86);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(402, 26);
-            this.txtPhone.TabIndex = 6;
+            this.txtPhone.TabIndex = 2;
             // 
             // txtAddress
             // 
@@ -53,7 +53,7 @@ namespace UI_UX_Dashboard_P1.Forms
             this.txtAddress.Location = new System.Drawing.Point(84, 49);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(402, 26);
-            this.txtAddress.TabIndex = 7;
+            this.txtAddress.TabIndex = 1;
             // 
             // label3
             // 
@@ -71,7 +71,7 @@ namespace UI_UX_Dashboard_P1.Forms
             this.txtName.Location = new System.Drawing.Point(84, 12);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(402, 26);
-            this.txtName.TabIndex = 8;
+            this.txtName.TabIndex = 0;
             // 
             // label2
             // 
@@ -104,6 +104,7 @@ namespace UI_UX_Dashboard_P1.Forms
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -131,6 +132,7 @@ namespace UI_UX_Dashboard_P1.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormAddEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAddEmployee";
             this.ResumeLayout(false);
             this.PerformLayout();

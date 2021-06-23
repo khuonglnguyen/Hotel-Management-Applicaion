@@ -35,8 +35,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnLeftMenu = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblAdmin = new System.Windows.Forms.Label();
+            this.pnlLeftMenu = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnLogoutIcon = new System.Windows.Forms.PictureBox();
             this.btnEmployee = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             this.pnlMain = new System.Windows.Forms.Panel();
             this.timerLeftMenu = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlLeftMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogoutIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEmployeeIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -71,7 +71,7 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.btnLeftMenu);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblAdmin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -128,39 +128,39 @@
             this.btnLeftMenu.UseVisualStyleBackColor = false;
             this.btnLeftMenu.Click += new System.EventHandler(this.btnLeftMenu_Click);
             // 
-            // label1
+            // lblAdmin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(221, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Admin Dashboard";
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblAdmin.Location = new System.Drawing.Point(221, 11);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(165, 25);
+            this.lblAdmin.TabIndex = 0;
+            this.lblAdmin.Text = "Admin Dashboard";
             // 
-            // panel2
+            // pnlLeftMenu
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.panel2.Controls.Add(this.btnLogout);
-            this.panel2.Controls.Add(this.btnLogoutIcon);
-            this.panel2.Controls.Add(this.btnEmployee);
-            this.panel2.Controls.Add(this.btnEmployeeIcon);
-            this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.btnDashBroad);
-            this.panel2.Controls.Add(this.btnDashBroadIcon);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 47);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(215, 694);
-            this.panel2.TabIndex = 1;
+            this.pnlLeftMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.pnlLeftMenu.Controls.Add(this.btnLogout);
+            this.pnlLeftMenu.Controls.Add(this.btnLogoutIcon);
+            this.pnlLeftMenu.Controls.Add(this.btnEmployee);
+            this.pnlLeftMenu.Controls.Add(this.btnEmployeeIcon);
+            this.pnlLeftMenu.Controls.Add(this.button9);
+            this.pnlLeftMenu.Controls.Add(this.pictureBox5);
+            this.pnlLeftMenu.Controls.Add(this.button8);
+            this.pnlLeftMenu.Controls.Add(this.pictureBox4);
+            this.pnlLeftMenu.Controls.Add(this.button7);
+            this.pnlLeftMenu.Controls.Add(this.pictureBox3);
+            this.pnlLeftMenu.Controls.Add(this.button6);
+            this.pnlLeftMenu.Controls.Add(this.pictureBox2);
+            this.pnlLeftMenu.Controls.Add(this.btnDashBroad);
+            this.pnlLeftMenu.Controls.Add(this.btnDashBroadIcon);
+            this.pnlLeftMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlLeftMenu.Location = new System.Drawing.Point(0, 47);
+            this.pnlLeftMenu.Name = "pnlLeftMenu";
+            this.pnlLeftMenu.Size = new System.Drawing.Size(215, 694);
+            this.pnlLeftMenu.TabIndex = 1;
             // 
             // btnLogout
             // 
@@ -358,6 +358,7 @@
             // 
             // timerLeftMenu
             // 
+            this.timerLeftMenu.Interval = 20;
             this.timerLeftMenu.Tick += new System.EventHandler(this.timerLeftMenu_Tick);
             // 
             // FormMain
@@ -367,7 +368,7 @@
             this.ClientSize = new System.Drawing.Size(1361, 741);
             this.ControlBox = false;
             this.Controls.Add(this.pnlMain);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlLeftMenu);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMain";
@@ -377,8 +378,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlLeftMenu.ResumeLayout(false);
+            this.pnlLeftMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogoutIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEmployeeIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -393,8 +394,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnlLeftMenu;
+        private System.Windows.Forms.Label lblAdmin;
         private System.Windows.Forms.Button btnLeftMenu;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

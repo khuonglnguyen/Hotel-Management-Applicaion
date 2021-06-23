@@ -26,6 +26,7 @@ namespace UI_UX_Dashboard_P1
         private void Form1_Load(object sender, EventArgs e)
         {
             UC_DashBroad uC_DashBroad = new UC_DashBroad();
+            uC_DashBroad.Dock = DockStyle.Fill;
             pnlMain.Controls.Add(uC_DashBroad);
         }
 
@@ -53,10 +54,37 @@ namespace UI_UX_Dashboard_P1
         {
             timerLeftMenu.Start();
         }
-
+        bool leftMenu = false;
         private void timerLeftMenu_Tick(object sender, EventArgs e)
         {
-            pnlMain.Top += 1;
+            if (leftMenu)
+            {
+                if (pnlLeftMenu.Width <= 215)
+                {
+                    pnlLeftMenu.Width += 5;
+                    btnLeftMenu.Left += 5;
+                    lblAdmin.Left += 5;
+                }
+                else
+                {
+                    leftMenu = false;
+                    timerLeftMenu.Stop();
+                }
+            }
+            else
+            {
+                if (pnlLeftMenu.Width > 50)
+                {
+                    pnlLeftMenu.Width -= 5;
+                    btnLeftMenu.Left -= 5;
+                    lblAdmin.Left -= 5;
+                }
+                else
+                {
+                    leftMenu = true;
+                    timerLeftMenu.Stop();
+                }
+            }
         }
 
         private void btnEmployee_Click(object sender, EventArgs e)
@@ -80,6 +108,7 @@ namespace UI_UX_Dashboard_P1
             }
             //Nếu chưa tồn tại UC_Employee thì Add vào pnlMain
             UC_Employee uC_Employee = new UC_Employee();
+            uC_Employee.Dock = DockStyle.Fill;
             pnlMain.Controls.Add(uC_Employee);
             pnlMain.Controls[pnlMain.Controls.Count-1].BringToFront();
         }
@@ -104,6 +133,7 @@ namespace UI_UX_Dashboard_P1
                 i++;
             }
             UC_DashBroad uC_DashBroad = new UC_DashBroad();
+            uC_DashBroad.Dock = DockStyle.Fill;
             pnlMain.Controls.Add(uC_DashBroad);
             pnlMain.Controls[pnlMain.Controls.Count-1].BringToFront();
         }

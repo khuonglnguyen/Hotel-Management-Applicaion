@@ -253,7 +253,6 @@ namespace UI_UX_Dashboard_P1.UserControls
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
             this.pictureBox16.Location = new System.Drawing.Point(0, 95);
             this.pictureBox16.Name = "pictureBox16";
@@ -308,7 +307,6 @@ namespace UI_UX_Dashboard_P1.UserControls
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
             this.pictureBox14.Location = new System.Drawing.Point(0, 95);
             this.pictureBox14.Name = "pictureBox14";
@@ -363,7 +361,6 @@ namespace UI_UX_Dashboard_P1.UserControls
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
             this.pictureBox13.Location = new System.Drawing.Point(0, 112);
             this.pictureBox13.Name = "pictureBox13";
@@ -629,7 +626,6 @@ namespace UI_UX_Dashboard_P1.UserControls
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1146, 37);
