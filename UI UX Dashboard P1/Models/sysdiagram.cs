@@ -12,14 +12,12 @@ namespace UI_UX_Dashboard_P1.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Employee
+    public partial class sysdiagram
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public string Address { get; set; }
-        public Nullable<int> EmployeeTypeID { get; set; }
-        public string Phone { get; set; }
-    
-        public virtual EmployeeType EmployeeType { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

@@ -26,5 +26,7 @@ namespace UI_UX_Dashboard_P1.Models
         }
     
         public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<EmployeeType> EmployeeTypes { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }
 }

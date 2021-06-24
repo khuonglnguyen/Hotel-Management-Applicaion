@@ -12,14 +12,18 @@ namespace UI_UX_Dashboard_P1.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Employee
+    public partial class EmployeeType
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public EmployeeType()
+        {
+            this.Employees = new HashSet<Employee>();
+        }
+    
         public int ID { get; set; }
         public string Name { get; set; }
-        public string Address { get; set; }
-        public Nullable<int> EmployeeTypeID { get; set; }
-        public string Phone { get; set; }
     
-        public virtual EmployeeType EmployeeType { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Employee> Employees { get; set; }
     }
 }
