@@ -30,9 +30,13 @@ namespace UI_UX_Dashboard_P1.UserControls
         private void InitializeComponent()
         {
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
-            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnLock = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.btnShowLocked = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnShowAll = new System.Windows.Forms.Button();
+            this.btnActive = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,18 +53,18 @@ namespace UI_UX_Dashboard_P1.UserControls
             this.dgvEmployee.TabIndex = 0;
             this.dgvEmployee.Click += new System.EventHandler(this.dgvEmployee_Click);
             // 
-            // btnDelete
+            // btnLock
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.LightCoral;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnDelete.Location = new System.Drawing.Point(177, 42);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(81, 33);
-            this.btnDelete.TabIndex = 10;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnLock.BackColor = System.Drawing.Color.LightCoral;
+            this.btnLock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLock.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnLock.Location = new System.Drawing.Point(177, 42);
+            this.btnLock.Name = "btnLock";
+            this.btnLock.Size = new System.Drawing.Size(81, 33);
+            this.btnLock.TabIndex = 10;
+            this.btnLock.Text = "Lock";
+            this.btnLock.UseVisualStyleBackColor = false;
+            this.btnLock.Click += new System.EventHandler(this.btnLock_Click);
             // 
             // btnAdd
             // 
@@ -88,12 +92,68 @@ namespace UI_UX_Dashboard_P1.UserControls
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
+            // btnShowLocked
+            // 
+            this.btnShowLocked.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnShowLocked.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowLocked.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnShowLocked.Location = new System.Drawing.Point(351, 42);
+            this.btnShowLocked.Name = "btnShowLocked";
+            this.btnShowLocked.Size = new System.Drawing.Size(134, 33);
+            this.btnShowLocked.TabIndex = 10;
+            this.btnShowLocked.Text = "Show Locked";
+            this.btnShowLocked.UseVisualStyleBackColor = false;
+            this.btnShowLocked.Click += new System.EventHandler(this.btnShowLocked_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.button1.Location = new System.Drawing.Point(491, 42);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 33);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Show Actived";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnShowActived_Click);
+            // 
+            // btnShowAll
+            // 
+            this.btnShowAll.BackColor = System.Drawing.Color.Thistle;
+            this.btnShowAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowAll.ForeColor = System.Drawing.Color.DarkMagenta;
+            this.btnShowAll.Location = new System.Drawing.Point(631, 42);
+            this.btnShowAll.Name = "btnShowAll";
+            this.btnShowAll.Size = new System.Drawing.Size(92, 33);
+            this.btnShowAll.TabIndex = 10;
+            this.btnShowAll.Text = "Show All";
+            this.btnShowAll.UseVisualStyleBackColor = false;
+            this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
+            // 
+            // btnActive
+            // 
+            this.btnActive.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActive.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnActive.Location = new System.Drawing.Point(264, 42);
+            this.btnActive.Name = "btnActive";
+            this.btnActive.Size = new System.Drawing.Size(81, 33);
+            this.btnActive.TabIndex = 10;
+            this.btnActive.Text = "Active";
+            this.btnActive.UseVisualStyleBackColor = false;
+            this.btnActive.Click += new System.EventHandler(this.btnActive_Click);
+            // 
             // UC_Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnShowAll);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnShowLocked);
+            this.Controls.Add(this.btnActive);
+            this.Controls.Add(this.btnLock);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvEmployee);
             this.Name = "UC_Employee";
@@ -107,8 +167,12 @@ namespace UI_UX_Dashboard_P1.UserControls
         #endregion
 
         private System.Windows.Forms.DataGridView dgvEmployee;
-        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnLock;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnShowLocked;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnShowAll;
+        private System.Windows.Forms.Button btnActive;
     }
 }

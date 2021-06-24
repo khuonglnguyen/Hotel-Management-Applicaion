@@ -19,6 +19,7 @@ namespace UI_UX_Dashboard_P1.Models
         public string Address { get; set; }
         public Nullable<int> EmployeeTypeID { get; set; }
         public string Phone { get; set; }
+        public Nullable<bool> IsLocked { get; set; }
     
         public virtual EmployeeType EmployeeType { get; set; }
     }

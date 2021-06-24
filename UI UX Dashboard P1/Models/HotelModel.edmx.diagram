@@ -5,9 +5,8 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="d6816953d77e476aa17c0852364cfbf6" Name="Diagram1">
-        <EntityTypeShape EntityType="HotelModel.Employee" Width="1.5" PointX="3" PointY="0.875" />
-        <EntityTypeShape EntityType="HotelModel.EmployeeType" Width="1.5" PointX="0.75" PointY="1.25" />
-        <EntityTypeShape EntityType="HotelModel.sysdiagram" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="HotelModel.Employee" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="HotelModel.EmployeeType" Width="1.5" PointX="0.75" PointY="1.375" />
         <AssociationConnector Association="HotelModel.FK_Employee_EmployeeType" />
       </Diagram>
     </edmx:Diagrams>

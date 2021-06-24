@@ -40,6 +40,7 @@ namespace UI_UX_Dashboard_P1.Forms
             try
             {
                 Employee employee = new Employee();
+                employee.IsLocked = false;
                 employee.Name = txtName.Text;
                 employee.Address = txtAddress.Text;
                 employee.Phone = txtPhone.Text;
