@@ -1,5 +1,5 @@
 ﻿
-namespace UI_UX_Dashboard_P1.UserControls
+namespace HotelManagementSystem.UserControls
 {
     partial class UC_DashBroad
     {

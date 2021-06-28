@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI UX Dashboard P1", "UI UX Dashboard P1\UI UX Dashboard P1.csproj", "{7B03FFB1-8550-437D-BA67-3AA850E7B854}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelManagementSystem", "UI UX Dashboard P1\HotelManagementSystem.csproj", "{7B03FFB1-8550-437D-BA67-3AA850E7B854}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

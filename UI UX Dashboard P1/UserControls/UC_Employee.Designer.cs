@@ -1,5 +1,5 @@
 ﻿
-namespace UI_UX_Dashboard_P1.UserControls
+namespace HotelManagementSystem.UserControls
 {
     partial class UC_Employee
     {
@@ -42,11 +42,11 @@ namespace UI_UX_Dashboard_P1.UserControls
             // 
             // dgvEmployee
             // 
-            this.dgvEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvEmployee.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmployee.Location = new System.Drawing.Point(3, 124);
+            this.dgvEmployee.Location = new System.Drawing.Point(3, 130);
             this.dgvEmployee.Name = "dgvEmployee";
             this.dgvEmployee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEmployee.Size = new System.Drawing.Size(1140, 567);
@@ -58,7 +58,7 @@ namespace UI_UX_Dashboard_P1.UserControls
             this.btnLock.BackColor = System.Drawing.Color.LightCoral;
             this.btnLock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLock.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnLock.Location = new System.Drawing.Point(177, 42);
+            this.btnLock.Location = new System.Drawing.Point(177, 48);
             this.btnLock.Name = "btnLock";
             this.btnLock.Size = new System.Drawing.Size(81, 33);
             this.btnLock.TabIndex = 10;
@@ -71,7 +71,7 @@ namespace UI_UX_Dashboard_P1.UserControls
             this.btnAdd.BackColor = System.Drawing.Color.GreenYellow;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnAdd.Location = new System.Drawing.Point(3, 42);
+            this.btnAdd.Location = new System.Drawing.Point(3, 48);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(81, 33);
             this.btnAdd.TabIndex = 11;
@@ -84,7 +84,7 @@ namespace UI_UX_Dashboard_P1.UserControls
             this.btnEdit.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnEdit.Location = new System.Drawing.Point(90, 42);
+            this.btnEdit.Location = new System.Drawing.Point(90, 48);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(81, 33);
             this.btnEdit.TabIndex = 10;
@@ -97,7 +97,7 @@ namespace UI_UX_Dashboard_P1.UserControls
             this.btnShowLocked.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnShowLocked.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowLocked.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnShowLocked.Location = new System.Drawing.Point(351, 42);
+            this.btnShowLocked.Location = new System.Drawing.Point(351, 48);
             this.btnShowLocked.Name = "btnShowLocked";
             this.btnShowLocked.Size = new System.Drawing.Size(134, 33);
             this.btnShowLocked.TabIndex = 10;
@@ -110,7 +110,7 @@ namespace UI_UX_Dashboard_P1.UserControls
             this.button1.BackColor = System.Drawing.Color.LightBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.button1.Location = new System.Drawing.Point(491, 42);
+            this.button1.Location = new System.Drawing.Point(491, 48);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 33);
             this.button1.TabIndex = 10;
@@ -123,7 +123,7 @@ namespace UI_UX_Dashboard_P1.UserControls
             this.btnShowAll.BackColor = System.Drawing.Color.Thistle;
             this.btnShowAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowAll.ForeColor = System.Drawing.Color.DarkMagenta;
-            this.btnShowAll.Location = new System.Drawing.Point(631, 42);
+            this.btnShowAll.Location = new System.Drawing.Point(631, 48);
             this.btnShowAll.Name = "btnShowAll";
             this.btnShowAll.Size = new System.Drawing.Size(92, 33);
             this.btnShowAll.TabIndex = 10;
@@ -136,7 +136,7 @@ namespace UI_UX_Dashboard_P1.UserControls
             this.btnActive.BackColor = System.Drawing.Color.YellowGreen;
             this.btnActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActive.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnActive.Location = new System.Drawing.Point(264, 42);
+            this.btnActive.Location = new System.Drawing.Point(264, 48);
             this.btnActive.Name = "btnActive";
             this.btnActive.Size = new System.Drawing.Size(81, 33);
             this.btnActive.TabIndex = 10;

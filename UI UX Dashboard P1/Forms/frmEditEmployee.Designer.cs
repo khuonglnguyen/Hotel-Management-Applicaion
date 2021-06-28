@@ -1,5 +1,5 @@
 ﻿
-namespace UI_UX_Dashboard_P1.Forms
+namespace HotelManagementSystem.Forms
 {
     partial class frmEditEmployee
     {

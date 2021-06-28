@@ -8,10 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using UI_UX_Dashboard_P1.Models;
-using UI_UX_Dashboard_P1.UserControls;
+using HotelManagementSystem.Models;
+using HotelManagementSystem.UserControls;
 
-namespace UI_UX_Dashboard_P1.Forms
+namespace HotelManagementSystem.Forms
 {
     public partial class frmEditEmployee : Form
     {

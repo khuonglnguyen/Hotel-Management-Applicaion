@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using UI_UX_Dashboard_P1.UserControls;
+using HotelManagementSystem.UserControls;
 
-namespace UI_UX_Dashboard_P1
+namespace HotelManagementSystem
 {
     public partial class FormMain : Form
     {

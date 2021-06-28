@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7B03FFB1-8550-437D-BA67-3AA850E7B854}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>UI_UX_Dashboard_P1</RootNamespace>
-    <AssemblyName>UI UX Dashboard P1</AssemblyName>
+    <RootNamespace>HotelManagementSystem</RootNamespace>
+    <AssemblyName>HotelManagementSystem</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -125,6 +125,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControls\UC_DashBroad.resx">
       <DependentUpon>UC_DashBroad.cs</DependentUpon>

@@ -1,4 +1,4 @@
-﻿namespace UI_UX_Dashboard_P1
+﻿namespace HotelManagementSystem
 {
     partial class FormMain
     {

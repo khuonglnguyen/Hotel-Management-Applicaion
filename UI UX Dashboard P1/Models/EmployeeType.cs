@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UI_UX_Dashboard_P1.Models
+namespace HotelManagementSystem.Models
 {
     using System;
     using System.Collections.Generic;
